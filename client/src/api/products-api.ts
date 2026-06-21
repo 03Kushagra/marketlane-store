@@ -5,7 +5,10 @@ import type {
   ProductListResponse,
 } from "../types/product-types";
 
-const API_BASE_URL = "/api";
+const DEFAULT_API_BASE_URL = "https://dummyjson.com";
+const API_BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL ?? DEFAULT_API_BASE_URL
+).replace(/\/$/, "");
 const PRODUCT_PAGE_LIMIT = 100;
 const CACHE_PREFIX = "marketlane-store";
 const CACHE_TTL_MS = 15 * 60 * 1000;
