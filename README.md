@@ -4,8 +4,8 @@ This is an ecommerce product store built for the assessment. The app uses React,
 
 ## Setup instructions
 
-npm install
-npm run dev
+- npm install
+- npm run dev
 
 ## Assumptions made
 
