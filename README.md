@@ -18,10 +18,7 @@ This is an ecommerce product store built for the assessment. The app uses React,
 - The project is split into `client` and `server` workspaces so the frontend consumes local `/api` routes instead of calling DummyJSON directly from every component.
 - API-related frontend code lives in `client/src/api`, while Express routes live in `server/src/routes`.
 - Reusable UI is kept in `client/src/components`, and page-level views are kept in `client/src/routes`.
-- File and folder names added for the assessment use kebab-case.
-- React Router handles product listing and product detail navigation.
 - The listing page uses URL query params for search, categories, brands, price range, and pagination.
-- Filtering is intentionally kept simple: products are loaded from DummyJSON, then search, price, category, and brand filters are applied on the client.
 - Product details are fetched when a product is opened, instead of loading every full product detail upfront.
 
 ## Improvements if given more time
